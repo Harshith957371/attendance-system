@@ -44,6 +44,7 @@ function Teacher() {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
 }, [sessionId]);
+
   // ✅ Finalize
   async function finalizeAttendance() {
     await supabase
