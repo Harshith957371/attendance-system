@@ -7,7 +7,7 @@ function Scanner() {
   const sessionId = params.get("session");
 
   const [status, setStatus] = useState("processing");
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     handleAttendance();
   }, [sessionId]);

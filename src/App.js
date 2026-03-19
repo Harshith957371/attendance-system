@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+//import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Teacher from "./Teacher";
 import Scanner from "./Scanner";
 import Login from "./Login";
