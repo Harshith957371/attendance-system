@@ -38,10 +38,12 @@ function Teacher() {
   }
 
   useEffect(() => {
-    const interval = setInterval(fetchAttendance, 2000);
-    return () => clearInterval(interval);
-  }, [sessionId]);
+  const interval = setInterval(fetchAttendance, 2000);
 
+  return () => clearInterval(interval);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [sessionId]);
   // ✅ Finalize
   async function finalizeAttendance() {
     await supabase
